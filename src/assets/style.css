@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 800vh;
+}
+/************* header *************/
+header {
+  background: url("../assets/img/books-2596809_1920.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  height: 120vh;
+}
+
+.search {
+  position: relative;
+  top: 3.5%;
+  left: 80%;
+  transform: translate(-99%);
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: width 0.5s;
+  overflow: hidden;
+}
+.search.active {
+  width: 70%;
+}
+
+.search input {
+  position: absolute;
+  background: transparent;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 90px);
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 0 10px;
+  color: #fff;
+}
+.icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.search.active .icon {
+  background: #ff355a;
+}
+.icon:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.search.active .icon:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 5px;
+  height: 15px;
+  background: transparent;
+  border: none;
+  border-right: 2px solid #fff;
+  border-radius: 0;
+  transition: 0.5s;
+  transform: rotate(45deg);
+}
+.icon:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 13px;
+  height: 13px;
+  background: transparent;
+  border-left: 2px solid #fff;
+  border-radius: 0;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+.search.active .icon:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 5px;
+  height: 15px;
+  background: transparent;
+  border: none;
+  border-right: 2px solid #fff;
+  border-radius: 0;
+  transition: 0.5s;
+  transform: rotate(-45deg);
+}
+
+header .fa {
+  color: #fff;
+  font-size: 45px;
+  position: absolute;
+  top: 4%;
+
+  left: 85%;
+}
+header .chart {
+  position: absolute;
+  background-color: red;
+  padding: 1% 2%;
+  left: 5%;
+  top: 25%;
+  z-index: 11;
+  font-size: 17px;
+  font-family: "Merriweather", sans-serif;
+  font-style: italic;
+  color: #fff;
+  font-weight: bold;
+}
+header > hr {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  background: #dbfade;
+  width: 100%;
+}
+header .vertical {
+  position: absolute;
+  left: -44%;
+  width: 100%;
+  transform: rotate(90deg);
+  background: #dbfade;
+}
+header .vertical-b {
+  position: absolute;
+  left: 44%;
+  width: 10vh;
+  transform: rotate(90deg);
+  background: #11161d;
+}
+.menu nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 24%;
+  left: 6%;
+}
+
+nav ul li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 3% 2%;
+  color: #fff;
+  font-family: "Merriweather", sans-serif;
+}
+nav ul li a {
+  text-align: none;
+  color: #fff;
+  font-family: "Merriweather", sans-serif;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+header h1 {
+  text-transform: uppercase;
+  position: absolute;
+  top: 30%;
+  color: #fff;
+  font-size: 15vw;
+  left: 20%;
+}
+header label {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+}
+header p {
+  font-size: 25px;
+  width: 30%;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.111;
+  text-align: left;
+  position: absolute;
+  top: 71%;
+  left: 50%;
+}
+header .p2 {
+  font-size: 10px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  text-align: left;
+  position: absolute;
+  padding: 5px;
+  top: 80%;
+  left: 50%;
+}
+/************* header *************/
+
+/************* orientation *************/
+.orientation {
+  position: relative;
+  height: 60vh;
+}
+
+.orientation #layer_0 {
+  position: absolute;
+  top: -40vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.orientation .layer_1 {
+  position: absolute;
+  z-index: 22;
+  top: -70px;
+  margin: 2%;
+  width: 100%;
+}
+.orientation .layer_1 h1 {
+  z-index: 22;
+  font-family: "Merriweather";
+
+  position: absolute;
+  color: #fff;
+}
+.orientation .row {
+  position: absolute;
+  z-index: 22;
+  left: 2%;
+}
+.orientation .row .col img {
+  margin: 9% 0 0 8% !important;
+  width: 230px;
+}
+.orientation .row .col i {
+  color: #fff;
+  position: absolute;
+  z-index: 22;
+  margin: -50px 50px 20px 80%;
+  background-color: #cc171e;
+  padding: 4%;
+}
+.orientation .row .col p {
+  position: absolute;
+  color: #fff;
+  margin: 0 0 0 20px;
+}
+/************* orientation *************/
+
+/************* description *************/
+
+.description {
+  background: #11161d;
+  box-sizing: border-box;
+  height: 880px;
+  width: 100%;
+  transform: skewY(2deg);
+  background-image: url("../assets/img/layer4.png");
+  background-position: center;
+  position: relative;
+  padding: 20px;
+  z-index: 22;
+}
+
+.description:before {
+  content: "";
+  background: #11161d;
+  height: 160px;
+  transform: skewY(-4deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.description:before {
+  top: -60px;
+}
+.description .col {
+  transform: skewY(-2deg);
+  margin: auto;
+  max-width: 25%;
+}
+
+.description .col:first-of-type .blog {
+  color: #cc171e;
+  font-size: 14px;
+  font-family: "SemplicitaPro", sans-serif;
+  text-transform: uppercase;
+}
+.description .col:first-of-type span {
+  color: #fff;
+  font-size: 14px;
+  font-family: "SemplicitaPro", sans-serif;
+  text-transform: uppercase;
+}
+.description .col:first-of-type h1 {
+  font-size: 35px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.description .col:first-of-type p {
+  font-size: 20px;
+  font-family: "Merriweather";
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  line-height: 1.45;
+}
+
+.description .col:nth-child(2) p {
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: #e7e7e8;
+  line-height: 1.92;
+  text-align: start;
+
+}
+.description .col:nth-child(3) p{
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: #e7e7e8;
+  line-height: 1.92;
+  margin-left: -40%;
+  max-width: 100%;
+
+}
+.description .col:nth-child(2) p:first-of-type{
+  margin-top: 50%;
+}
+.description .col:nth-child(3) p:first-of-type{
+  margin-top: 8%;
+
+}
+.description span:nth-last-child(2){
+position: absolute;
+width: 20%;
+z-index: 6;
+top:30%;
+    font-size: 11px;
+    font-family: "SemplicitaPro";
+    color: rgba(255, 255, 255, 0.502);
+    text-transform: uppercase;
+  left: 85%;
+    transform: rotate(-90deg);
+
+}
+.description hr{
+  border: 1px solid #cc171e;
+  float: right;
+  left: 93%;
+  top:43%;
+  z-index: 5;
+  width: 20px;
+  transform: rotate(90deg);
+  position: absolute;
+}
+/************* description *************/
